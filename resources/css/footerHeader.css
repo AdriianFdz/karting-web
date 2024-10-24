@@ -1,0 +1,235 @@
+html {
+    font-family: 'Lato';
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: white;
+}
+
+h2{
+    font-size: 2.75em;
+}
+
+p{
+    font-size: 1em;
+}
+
+#fondo {
+    position: fixed;
+    top: -2%;
+    left: -1%;
+    width: 110vw;
+    height: 110vh;
+    z-index: -2;
+    background-size: cover;
+    filter: brightness(30%) blur(10px);
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid white;
+    transition: all 200ms linear;
+    z-index: 1; /* Corregir error de capa al añadir animacion a la flecha (se superpone encima del nav)*/
+}
+
+.fixed-top {
+    background-color: black;
+}
+
+/* Estilos nav */
+nav img {
+    margin: 0.5% 1%;
+    display: inline-block;
+    width: 6%;
+    vertical-align: middle;
+}
+
+nav ul {
+    display: inline;
+    width: fit-content;
+    list-style: none;
+    padding: 0.5% 1%;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0.5% 1%;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration-line: none;
+    transition: all 200ms linear;
+    vertical-align: middle
+}
+
+nav ul li a:hover {
+    color: #EEB42F;
+}
+
+nav .seleccionada{
+    color: #EEB42F;
+}
+
+main {
+    color: white;
+    margin: 10% auto 0;
+    max-width: 80%;
+}
+
+footer{
+    display: block;
+    background-color: black;
+    padding: 0 0 2% 0;
+    overflow: hidden;
+}
+
+#separadorFooter{
+    width: 106%;
+}
+
+/* Estilos footer */
+#contenedorFooter{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer section{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 auto;
+}
+
+footer a, footer p{  
+    color: white;
+    margin-left: 3%;
+    vertical-align: top;
+    font-size: 1.25em;
+    text-underline-offset: 4px;
+}
+
+footer section div{
+    text-align: left;
+}
+
+.tituloFooter{
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+#seccionContacto div{
+    width: 55%;
+    margin: 3% auto;
+}
+
+#seccionContacto div a{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5em;
+}
+
+#seccionRedes div{
+    width: 50%;
+    margin: 3% auto;
+}
+
+#seccionHorario div{
+    width: 75%;
+    margin: 3% auto;
+}
+
+#seccionHorario div p{
+    display: inline-block;
+    margin: 0 0 0 2%;
+    vertical-align: middle;
+}
+
+#seccionHorario div img{
+    vertical-align: middle;
+}
+
+#seccionHorario span{
+    color: red;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+#disclaimerFooter {
+    text-align: left;
+    line-height: 1.25em;
+    margin: 5% 0 5% 16%;
+}
+
+/* Estilos para móviles/tablet */
+@media only screen and (max-width: 1100px) {
+    nav .seleccionada{
+        text-decoration: none;
+    }
+    
+    header{
+        margin-bottom: 20%;
+    }
+    
+    nav{
+        font-size: 0.75em;
+        padding: 1%;
+    }
+
+    footer #contenedorFooter{
+        width: 100%;
+        margin: 0;
+    }
+
+    footer h2{
+        margin-top: 0;
+    }
+
+    footer #seccionContacto div, footer #seccionRedes div, footer #seccionHorario div{
+        display: inline-block;
+        margin: 2%;
+        vertical-align: top;
+    }
+
+    footer #seccionContacto, footer #seccionRedes, footer #seccionHorario{
+        display: block;
+        width: 80%;
+        margin: 10%;
+        padding: 5% 0;
+        border: 2px solid white;
+    }
+
+    #seccionContacto h2, #seccionRedes h2, #seccionHorario h2{
+        font-size: 2em;
+        width: 100%;
+    }
+    
+    #contenedorFooter #seccionContacto div a, #contenedorFooter #seccionContacto div img, 
+    #contenedorFooter #seccionRedes div a, #contenedorFooter #seccionRedes div img,
+    #contenedorFooter #seccionHorario div p, #contenedorFooter #seccionHorario div img{
+        font-size: 1em;
+        display: block;
+        text-align: center;
+        margin: 0 auto 5%;
+    }
+
+    footer #disclaimerFooter{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,161 @@
+h2{
+    font-size: 2.75em;
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+}
+
+form label{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+form input{
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 80%;
+}
+
+fieldset{
+    padding-top: 2%;
+    border-radius: 20px;
+    border: 2px solid rgb(202, 154, 40);
+    vertical-align: top;
+    height: fit-content;
+}
+
+#izquierda{
+    width: 30%;
+}
+
+fieldset legend{
+    font-size: 1.25em;
+}
+
+fieldset div{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+fieldset label{
+    width: 85%;
+    text-align: left;
+}
+
+fieldset p{
+    margin: 5% auto;
+    text-align: left;
+    width: 85%;
+}
+
+#izquierda{
+    display: inline-block;
+    margin-right: 3%;
+}
+
+#botonReservar{
+    display: block;
+    background-color: transparent;
+    border: 3px solid #6fc276;
+    color: #6fc276;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 20%;
+    margin: 0 auto 10%;
+    cursor: pointer;
+}
+
+#botonReservar:hover{
+    background-color: #6fc276;
+    color: white;
+}
+
+#medio{
+    width: 20%;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+#medio div{
+    margin-right: 10%;
+    vertical-align: top;
+}
+
+#derecha {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+}
+
+#derecha select{
+    width: 85%;
+    font-size: 1.25em;
+    border-radius: 5px;
+    font-family: 'Lato';
+}
+
+#derecha div p{
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+#derecha legend{
+    text-align: center;
+}
+
+.radioTandas{
+    width: fit-content;
+    margin-left: 5%;
+}
+
+
+.labelTandas{
+    font-size: 1.5em;
+}
+
+#contenedor-form{
+    text-align: center;
+}
+
+#reserva-abajo textarea{
+    width: 85%;
+    height: 5vh;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1em;
+    font-family: 'Lato';
+}
+
+#contenedor-tyc{
+    margin: 2% 4% 0;
+}
+
+#contenedor-tyc input{
+    height: 2vh;
+    width: 2vw;
+    margin-bottom: 0;
+}
+
+#contenedor-tyc a{
+    color: rgb(202, 154, 40);
+}
+
+/* Estilos para móviles/tablet */
+@media only screen and (max-width: 1100px) {
+    #contenedor-form fieldset{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 6%;
+    }
+
+    #contenedor-tyc input, #contenedor-tyc label{
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+}

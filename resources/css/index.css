@@ -1,0 +1,279 @@
+#contenedorPrincipal{
+    overflow: hidden;    
+}
+
+.spacer{
+    height: 40vh;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+main {
+    margin: 6% auto 0;
+}
+
+hr{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    height: 1px;
+    border: 0;
+    
+}
+
+h1 {
+    padding: 0.4% 0%;
+    margin-top: 7%;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    background: radial-gradient(circle, rgba(179, 1, 39, 0.9) 0%, rgba(202, 154, 40, 0.9) 100%);
+}
+
+#startQuote {
+    border: 2px solid white;
+    width: fit-content;
+    padding: 0% 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+#quote {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#author {
+    font-size: 1.25em;
+    text-align: right;
+}
+
+#downArrow {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    transition: all 0.5s;
+    animation: moverFlecha 1s infinite alternate;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de circuito */
+#circuito {
+    margin: 15% 0 10%;
+}
+
+#panelesCircuito {
+    margin-bottom: 5%;
+}
+
+#panelesCircuito div {
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+    vertical-align: top;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+#panelesCircuito p {
+    margin-top: 0px;
+}
+
+#fotoCircuito {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 43%
+}
+
+.trazados {
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.trazados:hover{
+    background-color: rgba(0, 0, 0, 1);
+    padding: 5%;
+    border-radius: 10px;
+    transform: scale(2);
+    border: 2px solid white;
+}
+
+#circuito table {
+    border-collapse: collapse;
+    border: 5px solid rgb(255, 255, 255);
+    margin-top: 5%;
+}
+
+#circuito #tableHead { /* Lo hago de esta manera para dar mas prioridad en los selectores y que reemplaze el border anterior */
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(179, 1, 39);
+    padding: 1%;
+    font-size: 1.68em;
+}
+
+#tableHead th{
+    padding: 1% 2vw;
+}
+
+#circuito table tr{
+    margin: 10px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+#circuito table td {
+    padding: 1% 2vw;
+    font-size: 1em;
+}
+
+#circuito .lupa{
+    vertical-align: top;
+}
+
+/* Estilos para la sección de quienes somos */
+#quienesSomos{
+    margin: 10% 0;
+}
+
+#quienesSomos div img{
+    width: 25%;
+    border: 5px solid white;
+}
+
+#quienesSomos div div{
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+#quienesSomos div div p{
+    vertical-align: middle;
+    margin-top: 0;
+    font-size: 1.5em;
+
+}
+
+/* Estilos para la sección de por qué elegirnos */
+#porQueElegirnos{
+    margin: 10% 0;
+}
+
+#porQueElegirnos div div{
+    display: inline-block;
+    border: 2px solid white;
+    width: 25%;
+    height: 40vh;
+    vertical-align: top;
+    padding: 1% 2%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+#porQueElegirnos div div h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#porQueElegirnos div div p{
+    font-size: 1.5em;
+}
+
+#porQueElegirnos #calidad{ /* Lo hago de esta manera para dar mas prioridad en los selectores y que reemplaze el margin-right anterior */
+    margin-right: 0;
+}
+
+/* Animaciones */
+@keyframes moverFlecha {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+   
+/* Estilos para móviles/tablet */
+@media only screen and (max-width: 1100px) {
+    h1{
+        margin-top: 9%;
+        padding: 2% 0;
+        font-size: 1.5em;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #contenedorPrincipal{
+        margin-top: 50%;
+    }
+
+    #downArrow {
+        width: 30%;
+    }
+
+    #panelesCircuito div{
+        display: block;
+        width: 100%;
+    }
+
+    #panelesCircuito img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #panelesCircuito table{
+        text-align: center;
+        font-size: 0.63em;
+    }
+
+    #panelesCircuito table img{
+        width: 80%;
+    }
+
+    #panelesCircuito table #tableHead{
+        font-size: 1em;
+    }
+    
+    #panelesCircuito .lupa{
+        display: none;
+    }
+
+    #quienesSomos div div{
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    #quienesSomos div img{
+        display: block;
+        width: 100%;    
+    }
+
+    #porQueElegirnos div div{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 10%;
+    }
+}
+   
