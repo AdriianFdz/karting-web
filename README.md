@@ -1,7 +1,7 @@
 # Karting Fernandez
 A karting simple website for an university project.
 ## DISCLAIMER
-This is not a real bussiness neither functional website.
+This is not a real bussiness neither functional website. All the information inside the web is random and any resemblance is a coincidence
 
 The background video is taken from the GripWerx Racing Youtube channel. Im not the owner of that video.
 
